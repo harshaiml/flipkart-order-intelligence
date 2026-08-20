@@ -1,0 +1,44 @@
+Part 2 -- Product Image Categoriser: Final Evaluation Output
+================================================================
+
+Dataset: Fashion-MNIST (60,000 train / 10,000 test, Zalando Research)
+Split: 55,000 train / 5,000 validation / 10,000 test (stratified)
+Model: ImageNet-pretrained ResNet-18 backbone (frozen) + trained classifier head
+Feature-extraction validation accuracy: 91.12% (>= 80% bar -- no fine-tuning needed)
+
+FINAL TEST-SET ACCURACY: 89.86%
+
+Per-class precision / recall
+-----------------------------
+T-shirt/top     precision=0.848  recall=0.840
+Trouser         precision=0.994  recall=0.971
+Pullover        precision=0.860  recall=0.857
+Dress           precision=0.904  recall=0.871
+Coat            precision=0.805  recall=0.902
+Sandal          precision=0.978  recall=0.949
+Shirt           precision=0.750  recall=0.696
+Sneaker         precision=0.915  recall=0.968
+Bag             precision=0.964  recall=0.992
+Ankle boot      precision=0.972  recall=0.940
+
+Top confusion pairs (true -> predicted, count)
+-----------------------------------------------
+Shirt        -> T-shirt/top : 114
+Shirt        -> Coat        : 102
+T-shirt/top  -> Shirt       :  86
+
+Interpretation
+--------------
+The model's two largest confusion pairs both involve the "Shirt" class being
+mistaken for "T-shirt/top" or "Coat", and vice versa. This is plausible: at
+28x28 grayscale resolution, shirts, t-shirts, and coats are all upper-body
+garments with broadly similar silhouettes (rectangular torso, two sleeves),
+and the low resolution removes fine-grained cues (collar shape, sleeve
+length, fabric texture) that would normally distinguish them. This is
+reflected in "Shirt" having the lowest precision (0.750) and recall (0.696)
+of all 10 classes -- it is the category the model finds hardest to separate
+from its visually similar neighbours.
+
+Full run log (for reference): see the Google Colab training transcript
+referenced in the root README.md. This file is the persisted evaluation
+output required by the Part 2 submission criteria.
