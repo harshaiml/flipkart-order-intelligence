@@ -1,0 +1,12 @@
+{
+  "note": "Fresh conversation (no prior turns) -- 'that order' has no context, so intent falls back to policy_kb instead of incorrectly reusing state.",
+  "input": {
+    "user_input": "What about that order -- is it high risk?"
+  },
+  "intent": "policy_kb",
+  "final_answer": {
+    "answer": "I don't have a confident policy answer for this (top retrieved similarity=0.310 is below the groundedness threshold=0.35). Please contact Flipkart support directly for this query.",
+    "source": "policy_kb",
+    "confidence": 0.3103
+  }
+}

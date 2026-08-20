@@ -1,0 +1,26 @@
+{
+  "input": {
+    "user_input": "What about that order -- is it high risk?",
+    "last_order_id": "ORD99881",
+    "order_features": {
+      "order_id": "ORD99881",
+      "product_category": "Apparel",
+      "price_inr": 1200,
+      "discount_pct": 15,
+      "payment_method": "Prepaid_UPI",
+      "customer_tenure_days": 600,
+      "num_previous_orders": 12,
+      "num_previous_returns": 1,
+      "delivery_distance_km": 80,
+      "delivery_days": 3,
+      "is_weekend_order": 0,
+      "rating_given": 4
+    }
+  },
+  "final_answer": {
+    "answer": "This order has an estimated return probability of 0.4381 (Low risk).",
+    "source": "return_risk_tool",
+    "confidence": 0.4381
+  },
+  "intent": "return_risk_tool"
+}

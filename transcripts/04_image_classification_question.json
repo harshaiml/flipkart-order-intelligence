@@ -1,0 +1,12 @@
+{
+  "input": {
+    "user_input": "What category is this product image?",
+    "image_path": "/content/flipkart-order-intelligence/data/sample_images/05_Sandal.png"
+  },
+  "final_answer": {
+    "answer": "This product looks like a 'Sandal' (confidence=1.0).",
+    "source": "image_classifier_tool",
+    "confidence": 1.0
+  },
+  "intent": "image_classifier_tool"
+}

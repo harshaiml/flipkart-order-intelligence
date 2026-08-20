@@ -1,0 +1,11 @@
+{
+  "input": {
+    "user_input": "What is Flipkart's stock price target for next quarter?"
+  },
+  "final_answer": {
+    "answer": "Standard returns due to change of mind are free of shipping charges for Flipkart Plus members, and incur a nominal fee for other customers in categories where reverse pickup is offered. (Source: Return Shipping Fee Policy)",
+    "source": "policy_kb",
+    "confidence": 0.4454
+  },
+  "intent": "policy_kb"
+}

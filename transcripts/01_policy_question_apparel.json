@@ -1,0 +1,11 @@
+{
+  "input": {
+    "user_input": "How long do I have to return a pair of shoes?"
+  },
+  "final_answer": {
+    "answer": "Apparel and footwear items can be returned within 14 days of delivery, provided tags are intact and the item is unworn. (Source: Return Window -- Apparel & Footwear)",
+    "source": "policy_kb",
+    "confidence": 0.6449
+  },
+  "intent": "policy_kb"
+}

@@ -1,0 +1,25 @@
+{
+  "input": {
+    "user_input": "Will this order likely be returned?",
+    "order_features": {
+      "order_id": "ORD10432",
+      "product_category": "Electronics",
+      "price_inr": 32000,
+      "discount_pct": 40,
+      "payment_method": "COD",
+      "customer_tenure_days": 25,
+      "num_previous_orders": 3,
+      "num_previous_returns": 2,
+      "delivery_distance_km": 450,
+      "delivery_days": 7,
+      "is_weekend_order": 1,
+      "rating_given": null
+    }
+  },
+  "final_answer": {
+    "answer": "This order has an estimated return probability of 0.551 (Medium risk).",
+    "source": "return_risk_tool",
+    "confidence": 0.551
+  },
+  "intent": "return_risk_tool"
+}

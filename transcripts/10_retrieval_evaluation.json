@@ -1,0 +1,99 @@
+{
+  "per_query": [
+    {
+      "query": "How long do I have to return a t-shirt I bought?",
+      "relevant_doc_ids": [
+        "return_apparel_footwear"
+      ],
+      "retrieved_doc_ids": [
+        "return_apparel_footwear",
+        "return_home",
+        "return_beauty"
+      ],
+      "hits": 1,
+      "precision@3": 0.3333,
+      "recall@3": 1.0
+    },
+    {
+      "query": "When will I get my refund for a COD order?",
+      "relevant_doc_ids": [
+        "cod_refund_timeline"
+      ],
+      "retrieved_doc_ids": [
+        "cod_refund_timeline",
+        "prepaid_refund_timeline"
+      ],
+      "hits": 1,
+      "precision@3": 0.5,
+      "recall@3": 1.0
+    },
+    {
+      "query": "How many days does delivery take in a small town?",
+      "relevant_doc_ids": [
+        "delivery_sla_nonmetro"
+      ],
+      "retrieved_doc_ids": [
+        "delivery_sla_metro"
+      ],
+      "hits": 0,
+      "precision@3": 0.0,
+      "recall@3": 0.0
+    },
+    {
+      "query": "Will someone come pick up my return, or do I have to ship it myself?",
+      "relevant_doc_ids": [
+        "reverse_pickup_eligibility"
+      ],
+      "retrieved_doc_ids": [
+        "cancellation_policy",
+        "return_apparel_footwear",
+        "damaged_item_policy"
+      ],
+      "hits": 0,
+      "precision@3": 0.0,
+      "recall@3": 0.0
+    },
+    {
+      "query": "The phone I received is damaged, what happens now?",
+      "relevant_doc_ids": [
+        "damaged_item_policy"
+      ],
+      "retrieved_doc_ids": [
+        "damaged_item_policy",
+        "return_beauty"
+      ],
+      "hits": 1,
+      "precision@3": 0.5,
+      "recall@3": 1.0
+    },
+    {
+      "query": "Can I return an opened perfume bottle?",
+      "relevant_doc_ids": [
+        "return_beauty"
+      ],
+      "retrieved_doc_ids": [
+        "return_beauty",
+        "return_apparel_footwear"
+      ],
+      "hits": 1,
+      "precision@3": 0.5,
+      "recall@3": 1.0
+    },
+    {
+      "query": "I got the wrong product in my package, what do I do?",
+      "relevant_doc_ids": [
+        "wrong_item_policy"
+      ],
+      "retrieved_doc_ids": [
+        "return_apparel_footwear",
+        "return_home",
+        "wrong_item_policy"
+      ],
+      "hits": 1,
+      "precision@3": 0.3333,
+      "recall@3": 1.0
+    }
+  ],
+  "average_precision_at_3": 0.3095,
+  "average_recall_at_3": 0.7143
+}
